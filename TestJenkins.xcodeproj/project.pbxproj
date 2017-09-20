@@ -430,7 +430,7 @@
 				DEVELOPMENT_TEAM = 8ZYCWJC35J;
 				INFOPLIST_FILE = TestJenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.TestJenkins;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.tt.KuuGa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -442,7 +442,7 @@
 				DEVELOPMENT_TEAM = 8ZYCWJC35J;
 				INFOPLIST_FILE = TestJenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.TestJenkins;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.tt.KuuGa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -516,6 +516,7 @@
 				C289C50B1F724AAB00BB238B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C289C50C1F724AAB00BB238B /* Build configuration list for PBXNativeTarget "TestJenkinsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				C289C50E1F724AAB00BB238B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C289C50F1F724AAB00BB238B /* Build configuration list for PBXNativeTarget "TestJenkinsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				C289C5111F724AAB00BB238B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
