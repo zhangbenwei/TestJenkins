@@ -16,6 +16,13 @@
 		C289C4EF1F724AAB00BB238B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C289C4ED1F724AAB00BB238B /* LaunchScreen.storyboard */; };
 		C289C4FA1F724AAB00BB238B /* TestJenkinsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C289C4F91F724AAB00BB238B /* TestJenkinsTests.m */; };
 		C289C5051F724AAB00BB238B /* TestJenkinsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C289C5041F724AAB00BB238B /* TestJenkinsUITests.m */; };
+		C289C51E1F727AC400BB238B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C289C4E61F724AAB00BB238B /* ViewController.m */; };
+		C289C51F1F727AC400BB238B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C289C4E31F724AAB00BB238B /* AppDelegate.m */; };
+		C289C5201F727AC400BB238B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C289C4E01F724AAB00BB238B /* main.m */; };
+		C289C5221F727AC400BB238B /* Pods_TestJenkins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2116EE93CD3EE3D3B0CD141C /* Pods_TestJenkins.framework */; };
+		C289C5241F727AC400BB238B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C289C4ED1F724AAB00BB238B /* LaunchScreen.storyboard */; };
+		C289C5251F727AC400BB238B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C289C4EB1F724AAB00BB238B /* Assets.xcassets */; };
+		C289C5261F727AC400BB238B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C289C4E81F724AAB00BB238B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,9 @@
 		C289C5001F724AAB00BB238B /* TestJenkinsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestJenkinsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C289C5041F724AAB00BB238B /* TestJenkinsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestJenkinsUITests.m; sourceTree = "<group>"; };
 		C289C5061F724AAB00BB238B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C289C51A1F727A6300BB238B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = TestJenkins/Config.xcconfig; sourceTree = "<group>"; };
+		C289C52E1F727AC400BB238B /* TestJenkins copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestJenkins copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C289C52F1F727AC400BB238B /* TestJenkins copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestJenkins copy-Info.plist"; path = "/Users/zhangbenwei/Documents/DemoSpace/TestJenkins/TestJenkins copy-Info.plist"; sourceTree = "<absolute>"; };
 		F13DAA6467FF55E291E8CF39 /* Pods-TestJenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestJenkins.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestJenkins/Pods-TestJenkins.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +90,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C289C5211F727AC400BB238B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C289C5221F727AC400BB238B /* Pods_TestJenkins.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,12 +113,14 @@
 		C289C4D31F724AAB00BB238B = {
 			isa = PBXGroup;
 			children = (
+				C289C51A1F727A6300BB238B /* Config.xcconfig */,
 				C289C4DE1F724AAB00BB238B /* TestJenkins */,
 				C289C4F81F724AAB00BB238B /* TestJenkinsTests */,
 				C289C5031F724AAB00BB238B /* TestJenkinsUITests */,
 				C289C4DD1F724AAB00BB238B /* Products */,
 				5D1BEB0167C218034EDA6ABB /* Pods */,
 				F50093B21B79788BFF18C8F0 /* Frameworks */,
+				C289C52F1F727AC400BB238B /* TestJenkins copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +130,7 @@
 				C289C4DC1F724AAB00BB238B /* TestJenkins.app */,
 				C289C4F51F724AAB00BB238B /* TestJenkinsTests.xctest */,
 				C289C5001F724AAB00BB238B /* TestJenkinsUITests.xctest */,
+				C289C52E1F727AC400BB238B /* TestJenkins copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +244,26 @@
 			productReference = C289C5001F724AAB00BB238B /* TestJenkinsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C289C51B1F727AC400BB238B /* TestJenkins copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C289C5291F727AC400BB238B /* Build configuration list for PBXNativeTarget "TestJenkins copy" */;
+			buildPhases = (
+				C289C51C1F727AC400BB238B /* [CP] Check Pods Manifest.lock */,
+				C289C51D1F727AC400BB238B /* Sources */,
+				C289C5211F727AC400BB238B /* Frameworks */,
+				C289C5231F727AC400BB238B /* Resources */,
+				C289C5271F727AC400BB238B /* [CP] Embed Pods Frameworks */,
+				C289C5281F727AC400BB238B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestJenkins copy";
+			productName = TestJenkins;
+			productReference = C289C52E1F727AC400BB238B /* TestJenkins copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +290,9 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = C289C4DB1F724AAB00BB238B;
 					};
+					C289C51B1F727AC400BB238B = {
+						DevelopmentTeam = P3MDCGZMK7;
+					};
 				};
 			};
 			buildConfigurationList = C289C4D71F724AAB00BB238B /* Build configuration list for PBXProject "TestJenkins" */;
@@ -267,6 +311,7 @@
 				C289C4DB1F724AAB00BB238B /* TestJenkins */,
 				C289C4F41F724AAB00BB238B /* TestJenkinsTests */,
 				C289C4FF1F724AAB00BB238B /* TestJenkinsUITests */,
+				C289C51B1F727AC400BB238B /* TestJenkins copy */,
 			);
 		};
 /* End PBXProject section */
@@ -296,10 +341,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C289C5231F727AC400BB238B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C289C5241F727AC400BB238B /* LaunchScreen.storyboard in Resources */,
+				C289C5251F727AC400BB238B /* Assets.xcassets in Resources */,
+				C289C5261F727AC400BB238B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		1DDB1C904B357B94A0C772D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestJenkins/Pods-TestJenkins-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C289C51C1F727AC400BB238B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C289C5271F727AC400BB238B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestJenkins/Pods-TestJenkins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C289C5281F727AC400BB238B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,6 +473,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C289C51D1F727AC400BB238B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C289C51E1F727AC400BB238B /* ViewController.m in Sources */,
+				C289C51F1F727AC400BB238B /* AppDelegate.m in Sources */,
+				C289C5201F727AC400BB238B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -432,6 +542,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CustomAppBundleld = com.hisun.ttDev;
+				CustomProductName = KuggaDev;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -451,6 +563,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -480,6 +593,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CustomAppBundleld = com.hisun.tt.KuuGa;
+				CustomProductName = Kugga;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -493,6 +608,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -576,6 +692,132 @@
 			};
 			name = Release;
 		};
+		C289C5161F72630500BB238B /* testRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CustomAppBundleld = com.hisun.tttest;
+				CustomProductName = KuggaTest;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				NEW_SETTING = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = testRelease;
+		};
+		C289C5171F72630500BB238B /* testRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13DAA6467FF55E291E8CF39 /* Pods-TestJenkins.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P3MDCGZMK7;
+				INFOPLIST_FILE = TestJenkins/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.tt.KuuGa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = testRelease;
+		};
+		C289C5181F72630500BB238B /* testRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8ZYCWJC35J;
+				INFOPLIST_FILE = TestJenkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..TestJenkinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestJenkins.app/TestJenkins";
+			};
+			name = testRelease;
+		};
+		C289C5191F72630500BB238B /* testRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8ZYCWJC35J;
+				INFOPLIST_FILE = TestJenkinsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..TestJenkinsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestJenkins;
+			};
+			name = testRelease;
+		};
+		C289C52A1F727AC400BB238B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16AD87A06A3B4549BA11349D /* Pods-TestJenkins.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P3MDCGZMK7;
+				INFOPLIST_FILE = "TestJenkins copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.tt.KuuGa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C289C52C1F727AC400BB238B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13DAA6467FF55E291E8CF39 /* Pods-TestJenkins.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P3MDCGZMK7;
+				INFOPLIST_FILE = "TestJenkins copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.tt.KuuGa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C289C52D1F727AC400BB238B /* testRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13DAA6467FF55E291E8CF39 /* Pods-TestJenkins.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P3MDCGZMK7;
+				INFOPLIST_FILE = "TestJenkins copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisun.tt.KuuGa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = testRelease;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -584,6 +826,7 @@
 			buildConfigurations = (
 				C289C5071F724AAB00BB238B /* Debug */,
 				C289C5081F724AAB00BB238B /* Release */,
+				C289C5161F72630500BB238B /* testRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -593,6 +836,7 @@
 			buildConfigurations = (
 				C289C50A1F724AAB00BB238B /* Debug */,
 				C289C50B1F724AAB00BB238B /* Release */,
+				C289C5171F72630500BB238B /* testRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -602,6 +846,7 @@
 			buildConfigurations = (
 				C289C50D1F724AAB00BB238B /* Debug */,
 				C289C50E1F724AAB00BB238B /* Release */,
+				C289C5181F72630500BB238B /* testRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -611,6 +856,17 @@
 			buildConfigurations = (
 				C289C5101F724AAB00BB238B /* Debug */,
 				C289C5111F724AAB00BB238B /* Release */,
+				C289C5191F72630500BB238B /* testRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C289C5291F727AC400BB238B /* Build configuration list for PBXNativeTarget "TestJenkins copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C289C52A1F727AC400BB238B /* Debug */,
+				C289C52C1F727AC400BB238B /* Release */,
+				C289C52D1F727AC400BB238B /* testRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

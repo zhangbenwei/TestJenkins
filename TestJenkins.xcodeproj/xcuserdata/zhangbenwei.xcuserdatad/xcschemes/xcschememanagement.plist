@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TestJenkins 2.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>TestJenkins copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>TestJenkins.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>C289C4FF1F724AAB00BB238B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C289C51B1F727AC400BB238B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
